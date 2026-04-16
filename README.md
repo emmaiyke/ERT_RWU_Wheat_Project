@@ -8,7 +8,7 @@ experiment that combined **Electrical Resistivity Tomography (ERT)** with
 ## Repository structure
 
 ```
-Ert_wheat_rwu/
+Ert_rwu_wheat/
 ├── codes/
 ├    ├── Rho_log10-plot.py                    # Time-lapse resistivity sections
 ├    ├── Rho_change(%)-plot.py                # Time-lapse difference-resistivity sections
