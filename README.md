@@ -3,7 +3,7 @@
 This repository contains the full data-processing pipeline for a 2024 field
 experiment that combined **Electrical Resistivity Tomography (ERT)** with
 **Time-Domain Reflectometry (TDR)** sensors to estimate root water uptake
-(RWU) in three durum wheat genotypes under terminal drought.
+(RWU) in three wheat genotypes under terminal drought.
 
 ## Repository structure
 
