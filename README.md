@@ -1,9 +1,8 @@
 # Wheat Field ERT — Multi-Genotype Root Water Uptake Analysis
 
-This repository contains the full data-processing pipeline for a 2024 field
-experiment that combined **Electrical Resistivity Tomography (ERT)** with
-**Time-Domain Reflectometry (TDR)** sensors to estimate root water uptake
-(RWU) in three wheat genotypes under terminal drought.
+This project uses field-based ERT with ML calibration to quantify root water uptake in wheat. 
+Root architectures were pre-selected in greenhouse experiments, and field results are validated 
+with plant physiology and microclimate data to compare genotype water-use strategies under drought.
 
 ## Repository structure
 
