@@ -8,18 +8,17 @@ experiment that combined **Electrical Resistivity Tomography (ERT)** with
 ## Repository structure
 
 ```
-wheat_ert_rwu/
-├── src/
-│   ├── main_pipeline.py            # Core ERT → SWC → RWU workflow
-│   ├── validate_ert_tdr.py         # Standalone ERT–TDR cross-validation figure
-│   ├── plot_ert_difference.py      # Time-lapse difference-resistivity sections
-│   └── plant_physiology_figures.py # Fluorescence, Gsw, yield, and RWU vs Gsw
-│
-├── data/                           # (gitignored) raw_data folder lives here
-│   └── README_data.md
-│
-├── figures/                        # Generated PNG outputs (gitignored)
-├── report/
-│   └── tables/                     # Generated CSV tables (gitignored)
+Ert_wheat_rwu/
+├── codes/
+├    ├── Rho_log10-plot.py                    # Time-lapse resistivity sections
+├    ├── Rho_change(%)-plot.py                # Time-lapse difference-resistivity sections
+│    ├── main_pipeline_all_plots.py           # Core ERT → SWC → RWU workflow
+│         ├── validate_ert_tdr.py             # Standalone ERT–TDR cross-validation figure
+│         └── plant_physiology_figures.py     # Fluorescence, Gsw, yield, and RWU vs Gsw   
+│   
+│    
+├── raw data                                  # inversion_res.dat, meta-data, tdr, vpd & par                                             
+│                       
+├──  tables                         # Generated CSV tables                      
 │
 └── README.md                       # This file
