@@ -1,23 +1,23 @@
-# Wheat Field ERT — Multi-Genotype Root Water Uptake Analysis
+Wheat Field ERT — Multi-Genotype Root Water Uptake Analysis
 
-This project uses field-based ERT with ML calibration to quantify root water uptake in wheat. 
-Root architectures were pre-selected in greenhouse experiments, and field results are validated 
-with plant physiology and microclimate data to compare genotype water-use strategies under drought.
+This project integrates Electrical Resistivity Tomography (ERT) with machine learning calibration to quantify root water uptake (RWU) in field-grown wheat under drought conditions.
 
-## Repository structure
+Root system architectures were pre-characterized in controlled greenhouse experiments, and field-scale RWU estimates are validated using plant physiology (fluorescence, stomatal conductance) and microclimate data (VPD, PAR) to compare genotype-specific water-use strategies.
 
-```
-Ert_rwu_wheat/
-├── codes/
-├    ├── Rho_log10-plot.py                    # Time-lapse resistivity sections
-├    ├── Rho_change(%)-plot.py                # Time-lapse difference-resistivity sections
-│    ├── main_pipeline_all_plots.py           # Core ERT → SWC → RWU workflow
-│         ├── validate_ert_tdr.py             # Standalone ERT–TDR cross-validation figure
-│         └── plant_physiology_figures.py     # Fluorescence, Gsw, yield, and RWU vs Gsw   
-│   
-│    
-├── raw data                                  # inversion_res.dat, meta-data, tdr, vpd & par                                             
-│                       
-├──  tables                         # Generated CSV tables                      
+ERT_RWU_Wheat_Project/
+├── codes/                         # Main scripts
+│   ├── main_pipeline_all_plots.py     # Core ERT → SWC → RWU workflow
+│   ├── validate_ert_tdr.py           # ERT–TDR calibration and validation
+│   ├── Rho_log10_plot.py             # Time-lapse resistivity sections
+│   ├── Rho_change_plot.py            # Difference-resistivity (% change)
+│   └── plant_physiology_figures.py   # Gsw, fluorescence, yield analysis
 │
-└── README.md                       # This file
+├── raw_data/                     # Input datasets
+│   ├── inversion_res_dat/       # ERT inversion outputs (.dat)
+│   ├── tdr_exports/             # TDR soil moisture & temperature
+│   ├── metadata/                # Experimental metadata
+│   └── climate/                 # VPD and PAR data (if applicable)
+│
+├── tables/                      # Generated CSV outputs
+├── figures/                     # Generated figures
+└── README.md                    # Project description
