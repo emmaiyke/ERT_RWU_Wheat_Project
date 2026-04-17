@@ -1,4 +1,4 @@
-Wheat Field ERT — Multi-Genotype Root Water Uptake Analysis
+## Wheat Field ERT — Multi-Genotype Root Water Uptake Analysis
 
 This project integrates Electrical Resistivity Tomography (ERT) with machine learning calibration to quantify root water uptake (RWU) in field-grown wheat under drought conditions.
 
