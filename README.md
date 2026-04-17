@@ -4,6 +4,7 @@ This project integrates Electrical Resistivity Tomography (ERT) with machine lea
 
 Root system architectures were pre-characterized in controlled greenhouse experiments, and field-scale RWU estimates are validated using plant physiology (fluorescence, stomatal conductance) and microclimate data (VPD, PAR) to compare genotype-specific water-use strategies.
 
+
 ERT_RWU_Wheat_Project/
 ├── codes/                         # Main scripts
 │   ├── main_pipeline_all_plots.py     # Core ERT → SWC → RWU workflow
